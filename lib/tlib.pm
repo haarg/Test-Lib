@@ -24,7 +24,7 @@ sub import {
             }
         }
     }
-    die "unable to find t/lib directory";
+    die "unable to find t/lib directory in $dir";
 }
 
 1;

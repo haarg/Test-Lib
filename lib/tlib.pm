@@ -1,6 +1,5 @@
 package tlib;
 use strict;
-use warnings FATAL => 'all';
 use File::Spec;
 use Cwd ();
 

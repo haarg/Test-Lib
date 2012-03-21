@@ -1,4 +1,6 @@
 package tlib;
+$VERSION = '0.001';
+$VERSION = eval $VERSION;
 use strict;
 use File::Spec;
 use Cwd ();
@@ -28,3 +30,34 @@ sub import {
 }
 
 1;
+
+__END__
+
+=head1 NAME
+
+tlib - Use libraries from a t/lib directory
+
+=head1 SYNOPSIS
+
+    use tlib;
+    use Test::More;
+    use Private::Testing::Module;
+    
+    ok 1, 'passing test';
+    my_test 'test from private module';
+
+=head1 DESCRIPTION
+
+Searches upward from the calling module for a directory F<t> with a F<lib> directory inside it, and adds it to the module search path.  Looks upward up to 5 directories.  This is intended to be used in test modules either directly in F<t> or in a subdirectory to find their included testing libraries located in F<t/lib>.
+
+=head1 AUTHOR
+
+Graham Knop <haarg@haarg.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2012 by Graham Knop.
+
+This is free software; you can redistribute it and/or modify it under the same terms as the Perl 5 programming language system itself.
+
+=cut

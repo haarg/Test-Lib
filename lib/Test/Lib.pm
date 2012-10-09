@@ -48,7 +48,11 @@ Test::Lib - Use libraries from a t/lib directory
 
 =head1 DESCRIPTION
 
-Searches upward from the calling module for a directory F<t> with a F<lib> directory inside it, and adds it to the module search path.  Looks upward up to 5 directories.  This is intended to be used in test modules either directly in F<t> or in a subdirectory to find their included testing libraries located in F<t/lib>.
+Searches upward from the calling module for a directory F<t> with
+a F<lib> directory inside it, and adds it to the module search path.
+Looks upward up to 5 directories.  This is intended to be used in
+test modules either directly in F<t> or in a subdirectory to find
+their included testing libraries located in F<t/lib>.
 
 =head1 AUTHOR
 

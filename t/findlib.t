@@ -1,7 +1,7 @@
 use strict;
 use Test::More tests => 1;
 
-use tlib;
+use Test::Lib;
 
 require_ok 'tlib_test';
 

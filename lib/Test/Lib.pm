@@ -1,4 +1,4 @@
-package tlib;
+package Test::Lib;
 $VERSION = '0.001';
 $VERSION = eval $VERSION;
 use strict;
@@ -35,11 +35,11 @@ __END__
 
 =head1 NAME
 
-tlib - Use libraries from a t/lib directory
+Test::Lib - Use libraries from a t/lib directory
 
 =head1 SYNOPSIS
 
-    use tlib;
+    use Test::Lib;
     use Test::More;
     use Private::Testing::Module;
     

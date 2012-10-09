@@ -9,12 +9,12 @@ my %WriteMakefileArgs = (
     'CONFIGURE_REQUIRES' => {
         'ExtUtils::MakeMaker' => '6.30'
     },
-    'DISTNAME' => 'tlib',
+    'DISTNAME' => 'Test-Lib',
     'EXE_FILES' => [],
     'LICENSE' => 'perl',
-    'NAME' => 'tlib',
-    'ABSTRACT_FROM' => 'lib/tlib.pm',
-    'VERSION_FROM' => 'lib/tlib.pm',
+    'NAME' => 'Test-Lib',
+    'ABSTRACT_FROM' => 'lib/Test/Lib.pm',
+    'VERSION_FROM' => 'lib/Test/Lib.pm',
     'PREREQ_PM' => {
         'strict' => 0,
         'File::Spec' => 0,

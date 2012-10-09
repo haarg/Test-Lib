@@ -1,9 +1,9 @@
 use strict;
 use Test::More tests => 3;
 
-require tlib;
+require Test::Lib;
 
-ok !eval { tlib->import; 1 }, 'tlib import dies to find t/lib more than 5 levels up';
+ok !eval { Test::Lib->import; 1 }, 'tlib import dies to find t/lib more than 5 levels up';
 like $@, qr{^unable to find t/lib directory in }, 'error message correct';
 ok !eval { require tlib_test; 1 }, 'nothing added to @INC';
 

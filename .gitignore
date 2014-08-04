@@ -6,6 +6,9 @@
 /Makefile.old
 /MANIFEST
 /MANIFEST.bak
+/MANIFEST.SKIP
 /blib/
 /pm_to_blib
-/Test-Lib-*
+/Test-Lib-*.tar.gz
+/Test-Lib-*/
+/Distar

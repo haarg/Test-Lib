@@ -2,6 +2,7 @@ package Test::Lib;
 $VERSION = '0.001';
 $VERSION = eval $VERSION;
 use strict;
+use warnings;
 use File::Spec;
 use Cwd ();
 use lib ();

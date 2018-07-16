@@ -46,7 +46,7 @@ Test::Lib - Use libraries from a t/lib directory
     use Test::Lib;
     use Test::More;
     use Private::Testing::Module;
-    
+
     ok 1, 'passing test';
     my_test 'test from private module';
 

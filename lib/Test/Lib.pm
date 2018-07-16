@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 our $VERSION = '0.002';
-$VERSION = eval $VERSION;
+$VERSION =~ tr/_/d/;
 
 use File::Spec;
 use Cwd ();

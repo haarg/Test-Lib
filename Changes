@@ -1,5 +1,8 @@
 Revision history for Test::Lib
 
+  - fail with croak rather than die
+  - miscellaneous packaging cleanups
+
 0.002 - 2014-08-16
   - remove useless load test, being more compatible with older Test::Builder
   - include additional metadata
